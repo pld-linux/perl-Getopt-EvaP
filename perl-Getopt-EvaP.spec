@@ -2,7 +2,7 @@
 %define	pdir	Getopt
 %define	pnam	EvaP
 Summary:	Getopt::EvaP - evaluate Perl command line parameters
-Summary(pl):	Modu³ Getopt::EvaP - przekszta³caj±cy parametry z linii poleceñ
+Summary(pl):	Getopt::EvaP - przetwarzanie parametrów linii poleceñ Perla
 Name:		perl-Getopt-EvaP
 Version:	2.3.5
 Release:	11
@@ -17,25 +17,26 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-@PDT is the Parameter Description Table, which is a reference to a
-list of strings describing the command line parameters, aliases, types
-and default values. @MM is the Message Module, which is also a
-reference to a list of strings describing the command and it's
-parameters. %%OPT is an optional hash reference where Evaluate
-Parameters should place its results. If specified, the historical
-behaviour of modifying the calling routines' namespace by storing
-option values in %%Options, %%options and $opt* is disabled.
+Briefly, EvaP() is a table driven command line argument processor that
+type checks values and provides up to three levels of online help on
+the comamnd and its parameters.  You provide the Parameter Description
+Table (PDT), and, optionally, a help Message Module (MM), and call
+EvaP() with pointers to this information, and get in return an option
+hash with command line values indexed by argument name.  When users
+request help, EvaP() uses the PDT and MM to present the help data and
+exits, all automatically.
 
 %description -l pl
-@PDT to tablica opisu parametrów (Parameter Description Table), która
-jest referencj± do listy ³añcuchów opisuj±cych parametry dla linii
-poleceñ, aliasy, typy i warto¶ci domy¶lne. @MM to modu³ komunikacyjny
-(Message Module), który jest tak¿e referencj± do listy ³añcuchów -
-opisuj±cych polecenie i jego parametry. %%OPT to opcjonalna referencja
-do hasza, w którym modu³ powinien umie¶ciæ wyniki. Je¶li jest podana,
-wy³±czane jest stare zachowanie polegaj±ce na modyfikowaniu przstrzeni
-nazw funkcji wywo³uj±cych poprzez zapisywanie warto¶ci opcji w
-%%Options, %%options oraz $opt*.
+W skrócie, EvaP() jest opartym na tablicy procesorem argumentów linii
+poleceñ, który sprawdza typy warto¶ci i zapewnia do trzech poziomów
+pomocy online odno¶nie polecenia i jego argumentów. Podaje siê tablica
+opisu parametrów (Parameter Description Table, PDT) oraz, opcjonalnie,
+pomocniczy modu³ komunikacyjny (Message Module, MM), a nastêpnie
+wywo³uje EvaP() ze wska¼nikami do tych informacji, otrzymuj±c jako
+wynik hasza opcji zawieraj±cego warto¶ci z linii polecenia indeksowane
+nazwami argumentów. Gdy u¿ytkownik poprosi o pomoc, EvaP() korzysta z
+PDT i MM dla przedstawenia informacji pomocy i koñczy. Wszystko
+automatycznie.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
