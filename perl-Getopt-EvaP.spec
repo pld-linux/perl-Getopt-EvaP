@@ -5,13 +5,13 @@ Summary:	Getopt::EvaP - evaluate Perl command line parameters
 Summary(pl):	Modu³ Getopt::EvaP - przekszta³caj±cy parametry z linii poleceñ
 Name:		perl-Getopt-EvaP
 Version:	2.3.5
-Release:	10
+Release:	11
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Tk
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -40,7 +40,8 @@ nazw funkcji wywo³uj±cych poprzez zapisywanie warto¶ci opcji w
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -55,6 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README
 %attr(755,root,root) %{_bindir}/genpTk
-%{perl_sitelib}/Getopt/DisU.pl
-%{perl_sitelib}/Getopt/EvaP.pm
+%{perl_vendorlib}/Getopt/DisU.pl
+%{perl_vendorlib}/Getopt/EvaP.pm
 %{_mandir}/man3/*
