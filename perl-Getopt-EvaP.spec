@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Getopt
 %define	pnam	EvaP
-%include	/usr/lib/rpm/macros.perl
 Summary:	Getopt-EvaP perl module
 Summary(pl):	Modu³ perla Getopt-EvaP
 Name:		perl-Getopt-EvaP
 Version:	2.3.5
-Release:	7
-
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +22,7 @@ Getopt-EvaP perl module.
 Modu³ perla Getopt-EvaP.
 
 %prep
-%setup -q -n Getopt-EvaP-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
