@@ -3,7 +3,7 @@ Summary:	Getopt-EvaP perl module
 Summary(pl):	Modu³ perla Getopt-EvaP
 Name:		perl-Getopt-EvaP
 Version:	2.3.5
-Release:	5
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -12,6 +12,7 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Getopt/Getopt-EvaP-%{vers
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Tk
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
