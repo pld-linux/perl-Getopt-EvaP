@@ -3,7 +3,7 @@ Summary:	Getopt-EvaP perl module
 Summary(pl):	Modu³ perla Getopt-EvaP
 Name:		perl-Getopt-EvaP
 Version:	2.3.5
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
