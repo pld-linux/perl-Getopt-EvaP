@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Getopt
 %define	pnam	EvaP
-Summary:	Getopt-EvaP perl module
-Summary(pl):	Modu³ perla Getopt-EvaP
+Summary:	Getopt::EvaP perl module
+Summary(pl):	Modu³ perla Getopt::EvaP
 Name:		perl-Getopt-EvaP
 Version:	2.3.5
 Release:	8
@@ -16,10 +16,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Getopt-EvaP perl module.
+Getopt::EvaP perl module.
 
 %description -l pl
-Modu³ perla Getopt-EvaP.
+Modu³ perla Getopt::EvaP.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
