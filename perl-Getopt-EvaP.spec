@@ -42,7 +42,7 @@ nazw funkcji wywo³uj±cych poprzez zapisywanie warto¶ci opcji w
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
