@@ -40,7 +40,7 @@ pomocniczy modu³ komunikacyjny (Message Module, MM), a nastêpnie
 wywo³uje EvaP() ze wska¼nikami do tych informacji, otrzymuj±c jako
 wynik hasza opcji zawieraj±cego warto¶ci z linii polecenia indeksowane
 nazwami argumentów. Gdy u¿ytkownik poprosi o pomoc, EvaP() korzysta z
-PDT i MM dla przedstawenia informacji pomocy i koñczy. Wszystko
+PDT i MM dla przedstawienia informacji pomocy i koñczy. Wszystko
 automatycznie.
 
 %prep
