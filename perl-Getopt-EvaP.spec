@@ -5,7 +5,7 @@ Summary:	Getopt::EvaP - evaluate Perl command line parameters
 Summary(pl):	Modu³ Getopt::EvaP - przekszta³caj±cy parametry z linii poleceñ
 Name:		perl-Getopt-EvaP
 Version:	2.3.5
-Release:	10
+Release:	11
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
