@@ -1,11 +1,10 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Getopt
 %define	pnam	EvaP
-Summary:	Getopt::EvaP perl module
-Summary(pl):	Modu³ perla Getopt::EvaP
+Summary:	Getopt::EvaP - evaluate Perl command line parameters.
 Name:		perl-Getopt-EvaP
 Version:	2.3.5
-Release:	8
+Release:	9
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -16,10 +15,14 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Getopt::EvaP perl module.
-
-%description -l pl
-Modu³ perla Getopt::EvaP.
+B<@PDT> is the Parameter Description Table, which is a reference to
+a list of strings describing the command line parameters, aliases,
+types and default values.  B<@MM> is the Message Module, which is also a
+reference to a list of strings describing the command and it's parameters.
+B<%OPT> is an optional hash reference where Evaluate Parameters should
+place its results.  If specified, the historical behaviour of modifying
+the calling routines' namespace by storing option values in B<%Options>,
+B<%options> and B<$opt*> is disabled.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
