@@ -40,7 +40,7 @@ nazw funkcji wywo³uj±cych poprzez zapisywanie warto¶ci opcji w
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install
