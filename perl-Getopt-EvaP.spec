@@ -6,7 +6,8 @@ Summary(pl):	Getopt::EvaP - przetwarzanie parametrów linii poleceñ Perla
 Name:		perl-Getopt-EvaP
 Version:	2.3.5
 Release:	11
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	edc3fd2fbb0070e4d4ce954d6e715443
