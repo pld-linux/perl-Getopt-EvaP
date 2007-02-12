@@ -6,7 +6,7 @@
 %define		pdir	Getopt
 %define		pnam	EvaP
 Summary:	Getopt::EvaP - evaluate Perl command line parameters
-Summary(pl):	Getopt::EvaP - przetwarzanie parametrÛw linii poleceÒ Perla
+Summary(pl.UTF-8):   Getopt::EvaP - przetwarzanie parametr√≥w linii polece≈Ñ Perla
 Name:		perl-Getopt-EvaP
 Version:	2.3.5
 Release:	12
@@ -31,16 +31,16 @@ hash with command line values indexed by argument name.  When users
 request help, EvaP() uses the PDT and MM to present the help data and
 exits, all automatically.
 
-%description -l pl
-W skrÛcie, EvaP() jest opartym na tablicy procesorem argumentÛw linii
-poleceÒ, ktÛry sprawdza typy warto∂ci i zapewnia do trzech poziomÛw
-pomocy online odno∂nie polecenia i jego argumentÛw. Podaje siÍ tablica
-opisu parametrÛw (Parameter Description Table, PDT) oraz, opcjonalnie,
-pomocniczy modu≥ komunikacyjny (Message Module, MM), a nastÍpnie
-wywo≥uje EvaP() ze wskaºnikami do tych informacji, otrzymuj±c jako
-wynik hasza opcji zawieraj±cego warto∂ci z linii polecenia indeksowane
-nazwami argumentÛw. Gdy uøytkownik poprosi o pomoc, EvaP() korzysta z
-PDT i MM dla przedstawienia informacji pomocy i koÒczy. Wszystko
+%description -l pl.UTF-8
+W skr√≥cie, EvaP() jest opartym na tablicy procesorem argument√≥w linii
+polece≈Ñ, kt√≥ry sprawdza typy warto≈õci i zapewnia do trzech poziom√≥w
+pomocy online odno≈õnie polecenia i jego argument√≥w. Podaje siƒô tablica
+opisu parametr√≥w (Parameter Description Table, PDT) oraz, opcjonalnie,
+pomocniczy modu≈Ç komunikacyjny (Message Module, MM), a nastƒôpnie
+wywo≈Çuje EvaP() ze wska≈∫nikami do tych informacji, otrzymujƒÖc jako
+wynik hasza opcji zawierajƒÖcego warto≈õci z linii polecenia indeksowane
+nazwami argument√≥w. Gdy u≈ºytkownik poprosi o pomoc, EvaP() korzysta z
+PDT i MM dla przedstawienia informacji pomocy i ko≈Ñczy. Wszystko
 automatycznie.
 
 %prep
