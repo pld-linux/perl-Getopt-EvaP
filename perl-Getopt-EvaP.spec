@@ -9,7 +9,7 @@ Summary:	Getopt::EvaP - evaluate Perl command line parameters
 Summary(pl.UTF-8):	Getopt::EvaP - przetwarzanie parametrów linii poleceń Perla
 Name:		perl-Getopt-EvaP
 Version:	2.3.5
-Release:	12
+Release:	13
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
