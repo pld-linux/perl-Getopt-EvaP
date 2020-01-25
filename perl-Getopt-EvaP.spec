@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Getopt
 %define		pnam	EvaP
 Summary:	Getopt::EvaP - evaluate Perl command line parameters
